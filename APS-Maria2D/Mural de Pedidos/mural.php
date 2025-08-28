@@ -1,10 +1,24 @@
+<?php
+include "conexao.php";
+
+// Inserir novo pedido/recado
+if(isset($_POST['cadastra'])){
+    $nome  = mysqli_real_escape_string($conexao, $_POST['nome']);
+    $email = mysqli_real_escape_string($conexao, $_POST['email']);
+    $msg   = mysqli_real_escape_string($conexao, $_POST['msg']);
+
+    $sql = "INSERT INTO recados (nome, email, mensagem) VALUES ('$nome', '$email', '$msg')";
+    mysqli_query($conexao, $sql) or die("Erro ao inserir dados: " . mysqli_error($conexao));
+    header("Location: mural.php");
+    exit;
+}
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
 <meta charset="utf-8"/>
-<title>Mural de Pedidos</title>
-<link rel="stylesheet" href="style.css"/>
-
+<title>Mural de recados</title>
+<link rel="stylesheet" href="mural.css"/>
 <script src="scripts/jquery.js"></script>
 <script src="scripts/jquery.validate.js"></script>
 <script>
@@ -24,27 +38,11 @@ $(document).ready(function() {
 });
 </script>
 </head>
-
-<?php
-include "conexao.php";
-
-if(isset($_POST['cadastra'])){
-    $nome  = mysqli_real_escape_string($conexao, $_POST['nome']);
-    $email = mysqli_real_escape_string($conexao, $_POST['email']);
-    $msg   = mysqli_real_escape_string($conexao, $_POST['msg']);
-
-    $sql = "INSERT INTO recados (nome, email, mensagem) VALUES ('$nome', '$email', '$msg')";
-    mysqli_query($conexao, $sql) or die("Erro ao inserir dados: " . mysqli_error($conexao));
-    header("Location: mural.php");
-    exit;
-}
-?>
-
 <body>
 <div id="main">
 <div id="geral">
 <div id="header">
-    <h1>Mural de pedidos</h1>
+    <h1>Mural de Recados</h1>
 </div>
 
 <div id="formulario_mural">
@@ -60,7 +58,7 @@ if(isset($_POST['cadastra'])){
 </div>
 
 <?php
-$seleciona = mysqli_query($conexao, "SELECT * FROM pedidos ORDER BY id DESC");
+$seleciona = mysqli_query($conexao, "SELECT * FROM recados ORDER BY id DESC");
 while($res = mysqli_fetch_assoc($seleciona)){
     echo '<ul class="recados">';
     echo '<li><strong>ID:</strong> ' . $res['id'] . '</li>';
@@ -71,10 +69,10 @@ while($res = mysqli_fetch_assoc($seleciona)){
 }
 ?>
 
-<div id="footer"> 
-</div> 
+<div id="footer">
+
+</div>
 </div>
 </div>
 </body>
 </html>
-(parou no passo 7 — Rodapé e fechamento do HTML)
