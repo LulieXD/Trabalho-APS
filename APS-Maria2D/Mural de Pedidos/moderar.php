@@ -35,7 +35,7 @@ if($editar_id){
 <head>
 <meta charset="utf-8"/>
 <title>Moderar recados</title>
-<link rel="stylesheet" href="mod.css"/>
+<link rel="stylesheet" type="text/css" href="mod.css">
 </head>
 <body>
 <div id="main">

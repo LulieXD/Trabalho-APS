@@ -18,7 +18,7 @@ if(isset($_POST['cadastra'])){
 <head>
 <meta charset="utf-8"/>
 <title>Mural de recados</title>
-<link rel="stylesheet" href="mural.css"/>
+<link rel="stylesheet" type="text/css" href="mural.css">
 <script src="scripts/jquery.js"></script>
 <script src="scripts/jquery.validate.js"></script>
 <script>
