@@ -36,8 +36,15 @@ if($editar_id){
 <meta charset="utf-8"/>
 <title>Moderar recados</title>
 <link rel="stylesheet" type="text/css" href="mod.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
+
+<a href="index.php" id="btn-voltar">
+    <i class="fa-solid fa-arrow-left"></i>
+</a>
+
 <body>
+    <div class="background-blur"></div>
 <div id="main">
 <div id="geral">
 <div id="header">

@@ -1,0 +1,163 @@
+/*Todos os CSS que estão sem uma linha de separação, se enquadram na mesma observação
+de comentário*/
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins";
+}
+
+body {
+    margin: 0; 
+    overflow-x: hidden; 
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    line-height: 1.6;
+}
+
+body p {
+    color: #444;
+}
+/*Pego em IA e modificado por mim*/
+#btn-voltar {
+    position: fixed;
+    top: 10px;
+    left: 20px;
+    width: 45px;
+    height: 45px;
+    background: #ff4da6;
+    color: white;            
+    border-radius: 50%;
+    display: flex;           
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+    transition: all 0.3s ease;
+}
+#btn-voltar:hover {
+    background: #e60073;
+    transform: scale(1.1);
+}
+#btn-voltar i {
+    font-size: 20px;
+}
+
+
+/*Pego em um trabalho antigo e modificado por mim*/
+.background-blur {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;  
+    height: 100%; 
+    background-image: url("imagens/my-melody2.jpg");
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+    z-index: -1;
+}
+
+
+#main {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+}
+
+#geral {
+    width: 600px;
+    background-color: #ffbed9b3;
+    padding: 25px 30px;
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+#header h1 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #f848a0;
+}
+
+#formulario_mural label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color:#444;
+}
+
+#formulario_mural input[type="text"],
+#formulario_mural textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    resize: vertical;
+    font-size: 14px;
+}
+
+#formulario_mural textarea {
+    min-height: 80px;
+}
+
+#formulario_mural .btn {
+    display: inline-block;
+    background-color: #dd2f77;
+    color: #fff;
+    padding: 10px 18px;
+    margin-bottom: 20px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+#formulario_mural .btn:hover {
+    background-color: #e60073;
+}
+
+.recados {
+    list-style: none;
+    background-color: #ffb2d2;
+    padding: 15px 20px;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    border-left: 5px solid #f848a0;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+    transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.recados:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 15px rgba(0,0,0,0.1);
+}
+
+.recados li {
+    margin-bottom: 6px;
+}
+
+.recados p {
+    color: #444;
+}
+
+#footer {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.footer-content {
+    color: #444;
+}
+
+/*Pego em IA e modificado por mim*/
+ul.recados li {
+  color: #444;
+}
+ul.recados li strong {
+  color: #444;
+}

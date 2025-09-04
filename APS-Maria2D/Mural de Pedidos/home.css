@@ -1,0 +1,69 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.background-blur {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;  
+    height: 100%; 
+    background-image: url("imagens/pink-sky.png");
+    background-size: cover;
+    background-position: center;
+    filter: blur(3px);
+}
+
+.inicio {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(10px);
+    border-radius: 16px;
+    padding: 100px;
+    text-align: center;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    width: 350px;
+    max-width: 90%;
+}
+
+.inicio h1 {
+    color: #ff4da6;
+    margin-bottom: 15px;
+    font-size: 35px;
+}
+
+.inicio p {
+    color: #444;
+    margin-bottom: 30px;
+    font-size: 23px;
+}
+
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px;
+    padding: 12px 18px;
+    font-size: 15px;
+    font-weight: bold;
+    color: white;
+    background: #ff4da6;
+    border-radius: 8px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+    transition: all 0.3s ease;
+}
+
+.btn i {
+    margin-right: 8px;
+}
+
+.btn:hover {
+    background: #e60073;
+    transform: translateY(-3px);
+}
