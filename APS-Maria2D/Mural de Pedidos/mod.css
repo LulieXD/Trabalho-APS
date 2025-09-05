@@ -145,4 +145,14 @@ body {
     background-color: #e60073;
 }
 
+#footer {
+    text-align: center;
+    margin-top: 25px;
+    font-size: 13px;
+}
+
+.footer-content {
+    color: #444;
+}
+
 /*Teve várias tentativas de mudar o texto dentro dos recados para a cor cinza, mas não consegui :sob:*/

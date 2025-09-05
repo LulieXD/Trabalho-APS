@@ -84,8 +84,14 @@ if(mysqli_num_rows($seleciona) <= 0){
 }
 ?>
 
-<div id="footer">
-</div>
+<footer class="footer">
+    <div class="footer-content">
+        ★ Algo a nos reportar? Contate-nos!<br>
+        <p><i class="fa-solid fa-envelope"></i> Email: contato@muralmagico.com</p>
+        </p>
+        <p>&copy; 2025 Mural Mágico ★ Todos os direitos reservados.</p>
+        </div>
+</footer>
 </div>
 </div>
 </body>
