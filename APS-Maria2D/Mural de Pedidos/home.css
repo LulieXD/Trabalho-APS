@@ -8,6 +8,7 @@ body {
     height: 100vh;
 }
 
+/*Pego em IA e modificado por mim*/
 .background-blur {
     position: fixed; 
     top: 0;
@@ -43,6 +44,7 @@ body {
     font-size: 23px;
 }
 
+/*Pego em IA e modificado por mim*/
 .btn {
     display: inline-flex;
     align-items: center;
@@ -54,15 +56,12 @@ body {
     color: white;
     background: #ff4da6;
     border-radius: 8px;
-    text-decoration: none;
     box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     transition: all 0.3s ease;
 }
-
 .btn i {
     margin-right: 8px;
 }
-
 .btn:hover {
     background: #e60073;
     transform: translateY(-3px);
